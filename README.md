@@ -48,6 +48,12 @@ words = [
 ```
 
 For example get word "автобус".
+make change like:
+```
+a => '1'
+в => '3'
+т => '7'
+```
 Makes symbol replaces in row below "password" (type button "add" if you want more replaces). 
 After define all symbol replaces press button "Brute passwd"
 
