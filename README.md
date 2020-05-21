@@ -14,38 +14,11 @@ Run this file by double click or drag and drop application.html in opened browse
 
 ## Usage
 
-choose the password from this array:
-```javascript
-words = [
-                'велосипед',
-                'парк',
-                'друг',
-                'успех',
-                'заяц',
-                'торт',
-                'луна',
-                'писатель',
-                'пират',
-                'значительный',
-                'безмятежный',
-                'выдающийся',
-                'наибольший',
-                'последний',
-                'приходить',
-                'соглашаться',
-                'решать',
-                'договариваться',
-                'сомневаться',
-                'спорт',
-                'аист',
-                'стол',
-                'команда',
-                'бумага',
-                'меню',
-                'подарок',
-                'автобус',
-        ];
-```
+choose the password from dict.txt
+
+Paste password to password field, press get md5 hash
+
+copy result hash and paste it to hash field
 
 For example get word "автобус".
 make change like:
@@ -54,10 +27,10 @@ a => '1'
 в => '3'
 т => '7'
 ```
-Makes symbol replaces in row below "password" (type button "add" if you want more replaces). 
+Makes symbol replaces in row below "password" (type button "Add" if you want more replaces). 
 After define all symbol replaces press button "Brute passwd"
 
-The program gives hash md5 and password if password can bruted.
+The program gives password if password can bruted.
 
 
 ## Contributing
