@@ -65,6 +65,7 @@
                     return $(this).val();
                 }).get(),
             res = array_combine(symbols, replaces)
+        console.log(words);
         object = new Passwords(words, res, hash);
         let brutedPassword = object.findPassword();
 
@@ -96,12 +97,13 @@
         })
         $('#brute_passwd').click(function (e) {
             e.preventDefault();
+            console.log('hhh')
             $.ajax({
                 url: './dict.txt',
                 method: 'get',
                 success: function (res) {
                     let words = res.split('\n');
-
+                    console.log(words);
                     getPassword(words);
                 }
             })
@@ -111,3 +113,4 @@
 </script>
 
 </html>
+
